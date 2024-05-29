@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trangsp.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="content.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-lg">
+            <!--nav-top-->
+            <nav class="" id="nav_top">
+                <!--logo-->
+                <a href="index.html" id="logo">
+                    <h2>BachHoaQTin.com</h2>
+                </a>
+                <!--search-->
+                <input type="text" class="form-control " id="searchInput" placeholder="Bạn tìm gì ....">
+                <!--cart-->
+                <button class="cart" data-toggle="modal" data-target="#cart">
+                    <i class="bi bi-cart" aria-hidden="true">Giỏ Hàng(<span class="total-count"></span>)</i>
+                </button>
+            </nav>
+        </div>
+        <nav class="" id="nav_main">
+            <div class="container-lg">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Danh Sách Sản Phẩm
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="index.html">Nước Giải Khát Có Ga</a></li>
+                                        <li><a class="dropdown-item" href="index.html">Nước Giải Khát Không Có Ga</a></li>
+                                        <li><a class="dropdown-item" href="index.html">Sữa Người Lớn</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                
+                                <a class="btn btn-success" type="submit" href="login.html"><i class="bi bi-people-fill"></i>Login</a>
+                              </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <div class="divider"></div>
+    <!-- pepsi background ---------------------------->
+    <div>
+        <div class="row">
+            <div class="col-lg-6">
+                <img width="100%" src="img/bgps2.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <img width="95%" src="img/bgps5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!--(website body)------------------------------>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img style="margin-left: 130px; width: 60%;" src="img/pepsi.jpg" alt="">
+                <img width="30%" src="img/pepsi.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div style="margin-left: -100px;">
+                    <h3 style="font-weight: 700;">
+                        PEPSI KHÔNG CALO LON 330ML
+                    </h3>
+                    <del>15.000đ</del>
+                    <h5 style="display: inline-block; color: red;">9,700₫</h5>
+                    <h5>Thời gian áp dụng 15-09-2023 – 16-10-2023</h5>
+                    <hr style="width: 430px;">
+                    <div class="row">
+                        <!-- increase or decrease quantity------------------------------------------ -->
+                        <div class="col-lg-6">
+                            <div class="quantity-container">
+                                <button class="quantity-button" id="decrement" onclick="changeQuantity(-1)">-</button>
+                                <input type="text" class="quantity-input" id="quantity" value="1" readonly>
+                                <button class="quantity-button" id="increment" onclick="changeQuantity(1)">+</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- buy now -------------------------------------------------->
+                            <div class="crad">
+                                <button type="button" class="add-to-cart btn btn-warning" href="#"
+                                    data-name="PEPSI&nbsp;KHÔNG&nbsp;CALO&nbsp;LON&nbsp;330ML" data-price="0.38">Thêm vô giỏ
+                                    Hàng
+                                </button>
+                            </div>
+                    </div>
+                    <hr style="width: 430px;">
+                    <!--  icon ---------------------------------------------------------------->
+                    <div class="icon-wrapper">
+                        <a style="text-decoration: none;" href="">
+                            <div class="icon-container icon-facebook">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </div>
+                        </a>
+                        <a style="text-decoration: none;" href="">
+                            <div class="icon-container icon-twitter">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </div>
+                        </a>
+                        <a style="text-decoration: none;" href="">
+                            <div class="icon-container icon-instagram">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </div>
+                        </a>
+                        <a style="text-decoration: none;" href="">
+                            <div class="icon-container icon-envelope">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- describe------------------------------------------->
+        <h5 style="font-weight: 700;">MÔ TẢ</h5>
+        <!-- Evaluate--------------------------------------- -->
+        <div class="rating-container">
+            <div class="rating">
+                <input type="radio" id="star-5" name="star-radio" value="5">
+                <label for="star-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path pathLength="360"
+                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                        </path>
+                    </svg>
+                </label>
+                <input type="radio" id="star-4" name="star-radio" value="4">
+                <label for="star-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path pathLength="360"
+                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                        </path>
+                    </svg>
+                </label>
+                <input type="radio" id="star-3" name="star-radio" value="3">
+                <label for="star-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path pathLength="360"
+                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                        </path>
+                    </svg>
+                </label>
+                <input type="radio" id="star-2" name="star-radio" value="2">
+                <label for="star-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path pathLength="360"
+                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                        </path>
+                    </svg>
+                </label>
+                <input type="radio" id="star-1" name="star-radio" value="1">
+                <label for="star-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path pathLength="360"
+                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                        </path>
+                    </svg>
+                </label>
+            </div>
+        </div>
+        <p>
+            Nước Uống Có Gaz Pepsi Không Calo – Thế hệ Pepsi-Cola tiên phong dành cho bạn, với vị Cola trứ danh, không
+            calo đem đến một trải nghiệm SẢNG KHOÁI TỘT ĐỈNH, để bạn thoải mái BUNG HẾT CHẤT MÌNH! <br> <br>
+            Pepsi là một trong những sản phẩm đồ uống có gas quen thuộc với tất cả mọi người Việt Nam nói chung và toàn
+            thế giới nói riêng. Là một sản phẩm của tập đoàn Pepsico. Nước uống Pepsi vị nguyên bản có hương Cola truyền
+            thống. Ngoài ra, ngày nay, để đáp ứng thị hiếu của mọi người, Pepsi đã nhanh chóng trình làng các dòng Pepsi
+            No Calories, Pepsi hương chanh… Đem đến trải nghiệm mới mẻ, thú vị cho người thưởng thức.
+            <br> <br>
+            <img width="100%" src="img/logops2.jpg" alt="">
+            <br> <br>
+            Pepsi được giới thiệu lần đầu tiên với tên gọi "Đồ uống của Brad" tại New Bern, Bắc Carolina, Hoa Kỳ, vào
+            năm 1893 bởi Caleb Bradham, người đã điều chế nó tại hiệu thuốc của mình, nơi đồ uống được bán. Nó được đổi
+            tên thành Pepsi-Cola vào năm 1898, "Pepsi" vì nó được quảng cáo là làm giảm chứng khó tiêu (ngày nay thường
+            được gọi là khó tiêu hoặc đau bụng) và "Cola" đề cập đến hương vị cola. Một số người cũng cho rằng "Pepsi"
+            có thể được dùng để chỉ đồ uống hỗ trợ tiêu hóa như men tiêu hóa pepsin, nhưng bản thân pepsin chưa bao giờ
+            được sử dụng như một thành phần của Pepsi-Cola. Công thức ban đầu cũng bao gồm đường và vani. Bradham đã tìm
+            cách tạo ra một thức uống từ đài phun nước hấp dẫn , có thể hỗ trợ tiêu hóa và bổ sung năng lượng.
+            <br> <br>
+            Giới thiệu về sản phẩm nước Giải Khát Pepsi
+            Nhắc đến thương hiệu Pepsi là nhắc đến một thương hiệu quá nổi trên thị trường hiện nay về đồ uống có ga, từ
+            trẻ đến già đều đã từng uống ít nhất một lần uống trong đời với nước ngọt nổi tiếng toàn thế giới này. Đã
+            gia nhập vào Việt Nam vào năm 1995, là sự kết hợp giữa PepsiCo VIệt Nam và tập đoàn Suntory Holdings
+            Limited, có tên gọi là Suntory Pepsico, trải qua gần 25 năm, đến nay công ty đã trở thành một trong số những
+            công ty đi đầu trong nghành công nghiệp nước giải khát trong nước lẫn ngoài nước.
+            <br> <br>
+            <img width="100%" src="img/logops4.jpg" alt="">
+            <br> <br>
+            Chính chiến dịch “Thế hệ Pepsi” này đã mang đến những hiệu quả ngoài sức tưởng tượng và trở thành một kim
+            chỉ nam của Pepsi trong những sản phẩm sau đó. Đặc biệt là nó đã tạo ra những sự thay đổi về nhận thức ở
+            người tiêu dùng với Pepsi khi đây không còn là một thức uống cạnh tranh với Coca-Cola về giá cả nữa.
+        </p>
+    </div>
+    <div style="background-color: rgb(242, 242, 242); height: 100%; width: 100%;">
+        <div class="container">
+            <!-- introduce---------------------------------- -->
+            <div class="bgkc">
+                <div class="row" style="margin-left: 7px;">
+                    <div style="padding-top: 30px;" class="col-lg-3">
+                        <img style="margin-top: -28px;" width="24%" src="img/htr1.png" alt="">
+                        <p style=" color: white; display: inline-block;"> <span style="font-weight: 700;">Đảm bảo chất
+                                lượng</span> <br>Sản phẩm mới mỗi ngày</p>
+                    </div>
+
+                    <div style="padding-top: 30px;" class="col-lg-3">
+                        <img style="margin-top: -28px;" width="24%" src="img/htr2.png" alt="">
+                        <p style=" color: white; display: inline-block;">
+                            <span style="font-weight: 700;"> Miễn phí ship 5km </span><br>
+                            Cho đơn hàng trên 300k
+                        </p>
+                    </div>
+
+                    <div style="padding-top: 30px;" class="col-lg-3">
+                        <img style="margin-top: -28px;" width="24%" src="img/htr3.png" alt="">
+                        <p style=" color: white; display: inline-block;">
+                            <span style="font-weight: 700;"> Đổi trả hàng linh hoạt</span> <br>
+                            Luôn sẵn sàng hỗ trợ
+                        </p>
+                    </div>
+
+                    <div style="padding-top: 30px;" class="col-lg-3">
+                        <img style="margin-top: -28px;" width="24%" src="img/htr4.png" alt="">
+                        <p style=" color: white; display: inline-block;"> <span style="font-weight: 700;">Thanh toán
+                                tiện
+                                lợi</span> <br>
+                            Tích hợp nhiều tiện ích</p>
+                    </div>
+                </div>
+            </div>
+            <!-- footer----------------------------- -->
+            <div
+                style="background-color: white;width: 100%;height: 300px; border-top-left-radius: 30px; border-top-right-radius: 30px;">
+                <br> <br>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <img style="padding-left: 5px;" width="100%" src="img/logoqt.png" alt="">
+                        <br>
+                        <img style="margin-left: 10px; margin-top: 10px;" width="100%" src="img/lgbct.png" alt="">
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 style="font-weight: 700;">VỀ CHÚNG TÔI</h5>
+                        <p style="color: rgb(129, 129, 129);">Chuỗi siêu thị Lan Chi Mart ra đời đã mang đến cho người
+                            dân vùng ngoại thành một dịch vụ mua
+                            sắm chuyên nghiệp,giá cả ổn định, dịch vụ chu đáo.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 style="font-weight: 700;">THÔNG TIN LIÊN HỆ</h5>
+                        <p style="color: rgb(129, 129, 129);">
+                            Trụ sở chính: Trung Sơn Trầm, Sơn Tây, Hà Nội <br>
+                            Tel/Fax: 1900 066 698 <br>
+                            Chi nhánh: KCN Thanh Oai, Thanh Oai, Hà Nội
+                        </p>
+                    </div>
+                    <div class="col-lg-3"> <br> <br>
+                        <h5 style="color: rgb(129, 129, 129);">Email: quangtin@gmail.com <br>
+                            Mã số thuế: 0107016612
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: rgb(230, 230, 230); width: 100%; height: 30px;">
+                <p style="text-align: center; padding-top: 2px;">Copyright © @ 2021 - All rights reserved. Designed by
+                    INNOCOM</p>
+            </div>
+        </div>
+    </div>
+    <!--modal-->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" href="pay.html">Order now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="cart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="trangsp.js"></script>
+</body>
+
+</html>

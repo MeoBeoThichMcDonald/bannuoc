@@ -1,0 +1,183 @@
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.quantity-button:active {
+    background-color: #45a049;
+}
+
+.quantity-input {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+/*mua ngay*/
+#mn{
+    border: none;
+    color: white;
+    background-color: rgb(250, 29, 29);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#mn:hover{
+    background-color: #45a049;
+    transition: 0.2s;
+}
+
+/*icon*/
+.icon-wrapper {
+    display: flex;
+    gap: 15px; /* khoảng cách giữa các biểu tượng */
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* giảm kích thước biểu tượng */
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(194, 194, 194);
+}
+.icon-container:hover{
+    background-color: rgb(201, 201, 201);
+}
+.icon-container i {
+    font-size: 20px; /* giảm kích thước biểu tượng */
+}
+
+.icon-container.icon-facebook i {
+    color: #3b5998; /* màu xanh Facebook */
+}
+
+
+.icon-container.icon-twitter i {
+    color: #1DA1F2; /* màu xanh Twitter */
+}
+
+.icon-container.icon-instagram i {
+    color: #E1306C; /* màu hồng Instagram */
+}
+
+.icon-container.icon-envelope i {
+    color: #0077B5; /* màu xanh LinkedIn */
+}
+
+/*đánh giá*/
+
+
+.rating {
+    display: flex;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+}
+
+.rating input {
+    appearance: none;
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating svg {
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+    from {
+        stroke-dashoffset: 24;
+    }
+}
+
+.rating label:hover svg {
+    stroke: var(--fill);
+}
+
+.rating input:checked ~ label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+}
+
+@keyframes yippee {
+    0% {
+        transform: scale(1);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30% {
+        transform: scale(0);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30.1% {
+        stroke: var(--fill);
+        stroke-dasharray: 0;
+        stroke-linejoin: miter;
+        stroke-width: 8px;
+    }
+
+    60% {
+        transform: scale(1.2);
+        fill: var(--fill);
+    }
+}
+/*kế cuối*/
+.bgkc{
+    background-image: linear-gradient(-90deg, rgb(255, 85, 34), rgb(255, 35, 35));
+    height: 100px;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+

@@ -1,0 +1,72 @@
+.sidleft{
+    height: 750px;
+    width: 300px;
+    background-color: white;
+    border: 1px #ccc solid;
+    margin-top: 20px;
+    float: left;
+}
+.list{
+    margin-top: 10px;
+    text-align: center;
+}
+.brand-button{
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: white;
+}
+.brand-button:hover{
+    background-color: white;
+    border: 1px solid #0099ff;
+}
+.img1{
+    width: 100%;
+}
+.divider{
+    height: 50px;
+    width: 100%;
+}
+.card{
+    margin-top: 20px;
+    border-radius: 0px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s;
+}
+.card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card-img-top{
+    margin-top: 30px;
+    overflow: hidden;
+    width:100%;
+    height: auto;       
+    transition: transform 0.3s; /* Thêm transition cho hiệu ứng */
+}
+
+.card-img-top:hover {
+    transform: translateY(-10px); /* Di chuyển ảnh lên khi di chuột vào */
+}
+.card-title{
+    text-decoration: none;
+}
+.price{
+    text-decoration:line-through ;
+    position: absolute;
+}
+.price-and-discount{
+    text-decoration: none;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+.buy{
+    text-decoration: none;
+    color: red;
+}
+.name-w{
+    text-decoration: none;
+    color: black;
+}
+.name-w:hover{
+    color: #0084ff;
+}
